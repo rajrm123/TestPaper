@@ -1,0 +1,268 @@
+****************************************************PAPER-1*********************************************************************************************************
+Q.1 Difference between Python version 2 and version 3? How do you check the current version of Python?
+
+Major differences include print statement syntax, Unicode support, and division behavior.
+Check Python version: python --version or python -V in the command line.
+
+Q.2 Difference between local variable vs global variable? Examples?
+ANS==>
+	Local variables have function scope, while global variables have global scope.
+	Example:
+		def example_function():
+    		local_var = 10  # Local variable
+    		print(local_var)
+		global_var = 20  # Global variable
+		example_function()
+		print(global_var)
+
+Q.3 What are the data types in Python?
+ANS=>
+	Common data types include int, float, str, list, tuple, dict, set, bool.
+
+Q.4 Difference between Mutable and Immutable Data types? How many data types are mutable or not? Provide reasons with examples?
+ANS==>
+	Mutable: Can be modified after creation (e.g., list, dict, set).
+	Immutable: Cannot be changed once created (e.g., int, float, str, tuple).
+	Example:
+	mutable_list = [1, 2, 3]
+	mutable_list[0] = 99  # Mutable
+	immutable_tuple = (1, 2, 3)
+	# immutable_tuple[0] = 99  # Error: Tuple is immutable
+
+Q.5 Why do we use loops? Provide 3 examples of for loop and 3 examples of while loop?
+ANS==>
+	Loops iterate over a sequence of elements.
+	Examples: for loop
+	for i in range(5):
+    	    print(i)
+
+	# Examples: `while` loop
+	count = 0
+	while count < 5:
+    	print(count)
+    	count += 1
+
+Q.6 Why do we use functions? Difference between lambda, filter, reduce, map function with examples?
+ANS==>
+	Functions encapsulate reusable code.
+	Examples: lambda, filter, reduce, map
+
+	# Lambda
+	square = lambda x: x**2
+
+	# Filter
+	numbers = [1, 2, 3, 4, 5]
+	evens = list(filter(lambda x: x % 2 == 0, numbers))
+
+	# Reduce
+	from functools import reduce
+	product = reduce(lambda x, y: x * y, numbers)
+
+	# Map
+	squares = list(map(lambda x: x**2, numbers))
+
+Q.7 Difference between list and tuple? Provide index(), insert(), append(), reverse(), pop() explanations with examples?
+ANS=>
+	List is mutable, while tuple is immutable.
+	Example:
+	
+	my_list = [1, 2, 3]
+	my_tuple = (4, 5, 6)
+
+	# Index
+	print(my_list[0])
+
+	# Insert
+	my_list.insert(1, 99)
+
+	# Append
+	my_list.append(7)
+
+	# Reverse
+	my_list.reverse()
+
+	# Pop
+	my_list.pop(1)
+
+Q.8 Difference between dictionary vs set? Provide keys(), values(), items() examples of dictionary and union(), intersection() in sets? Is FrozenSet mutable or not?
+ANS==>
+	Dictionary is a key-value pair, while set is an unordered collection of unique elements.
+
+	Examples:
+	my_dict = {'a': 1, 'b': 2}
+	my_set = {1, 2, 3}
+
+	# Dictionary
+	Keys = my_dict.keys()
+	values = my_dict.values()
+	items = my_dict.items()
+
+	# Set
+	union_set = {1, 2, 3}.union({3, 4, 5})
+	intersection_set = {1, 2, 3}.intersection({3, 4, 5})
+	FrozenSet is immutable.
+
+Q.9 What are decorators? Provide an example?
+ANS==>
+	Decorators modify or enhance functions.
+	Example:
+
+	def my_decorator(func):
+    	   def wrapper():
+           print("Something is happening before the function is called.")
+           func()
+           print("Something is happening after the function is called.")
+  	   return wrapper
+
+        @my_decorator
+	def say_hello():
+    	print("Hello!")
+
+Q.10 What is list comprehension? Provide an example?
+ANS=>
+	- List comprehension is a concise way to create lists.
+	- Example:
+	python squares = [x**2 for x in range(5)]
+
+Q.11 How do you create an array from a user-defined list?
+ANS==>
+	 Use NumPy's array function.
+	Example:
+	python import numpy as np;
+        my_list = [1, 2, 3] 
+	my_array = np.array(my_list)
+
+Q.12 Difference between hstack() vs vstack()? Provide an example?
+ANS==>
+	- NumPy functions for horizontal and vertical stacking.
+	- Example:
+	python import numpy as np;
+	a = np.array([1, 2, 3])
+	b = np.array([4, 5, 6])
+
+
+	  # Horizontal stack
+ 	 h_stack = np.hstack((a, b))
+
+	  # Vertical stack
+  	v_stack = np.vstack((a, b))
+ 
+Q.13 What is Broadcasting in NumPy? Provide an example?
+ANS==>
+	 Broadcasting allows implicit element-wise operations on arrays of different shapes.
+	 Example:
+		python import numpy as np a = np.array([1, 2, 3]) b = 2 result = a + b # Broadcasting
+
+
+Q.14 What is zeros(), ones(), eye(), diag(), randint(), rand(), seed(), linspace(), unique() in NumPy? Provide explanations with examples?
+ANS==>
+	Examples:
+	python import numpy as np;
+	zeros_array = np.zeros((2, 3)) 
+	ones_array = np.ones((2, 3)) 
+	eye_matrix = np.eye(3) 
+	diag_array = np.diag([1, 2, 3]) 
+	randint_array = np.random.randint(1, 10, size=(2, 3)) 
+	rand_array = np.random.rand(2, 3) 
+	seed_array = np.random.seed(42) 
+	linspace_array = np.linspace(0, 1, 5) 
+	unique_values = np.unique([1, 2, 2, 3])
+
+Q.15 How can you reshape your array in NumPy? What is argmin() and argmax() in NumPy? Provide examples?
+ANS==>
+	Reshape with reshape().
+	Find indices of the minimum and maximum with argmin() and argmax().
+	Example:
+	python import numpy as np
+	array = np.array([[1, 2, 3], [4, 5, 6]])
+
+*******************************************************PAPER-2********************************************************************************************************
+
+
+Q.1 What is Pandas?
+ANS==>
+	Pandas is an open-source data manipulation and analysis library for Python.
+	It provides data structures like DataFrame and Series, as well as functions to manipulate and analyze structured data.
+
+Q.2 Difference between Series and DataFrame?
+ANS==>
+	Series is a one-dimensional labeled array, while DataFrame is a two-dimensional labeled data structure.
+	Series can be seen as a single column of a DataFrame.
+
+Q.3 Difference between loc and iloc?
+ANS=>
+	loc is label-based indexing, and iloc is integer-location based indexing.
+	loc is used with labels, while iloc is used with integer indices.
+
+Q.4 What does value_counts() do?
+ANS==>
+	value_counts() is a Pandas function that returns a Series containing counts of unique values.
+	It is often used to analyze the distribution of categorical data.
+Q.5 How do you handle missing values using Pandas?
+ANS==>
+	Methods include dropna() to drop missing values, fillna() to fill missing values, and interpolate() for interpolation.
+	Example:
+		df.dropna()  # Drop rows with missing values
+		df.fillna(0)  # Fill missing values with 0
+Q.6 How do you merge two tables using Pandas?
+ANS==>
+	Use merge() function to combine two DataFrames based on a common column or index.
+	Example:
+		merged_df = pd.merge(df1, df2, on='common_column')
+
+Q.7 How do you connect Jupyter Notebook to MySQL?
+ANS==>
+	
+
+Q.8 What does groupby in Pandas do?
+ANS==>
+	groupby is used to split the data into groups based on some criteria.
+	It is often followed by an aggregation function (e.g., sum(), mean()) to perform operations on each group.
+
+Q.9 Difference between CrossTab vs Pivot table?
+ANS==>
+	crosstab() is used for cross-tabulation, while pivot_table() is for creating a spreadsheet-style pivot table.
+	pivot_table() provides more flexibility in terms of defining aggregation functions and handling missing values.
+
+Q.10 In which scenario, what kind of plot will you use? Numerical ==? , Categorical ==?
+ANS==>
+	For numerical data: Histogram, Boxplot, Line plot.
+	For categorical data: Bar plot, Pie chart, Count plot.
+
+Q.11 What does TimeDelta in Pandas?
+ANS==>
+	TimeDelta represents the difference between two dates or times.
+	It is often used for time-based arithmetic.
+
+Q.12 How can you extract day, month, year in a date column using Pandas?
+ANS==>
+	Use the dt accessor with day, month, and year attributes.
+	Example:
+		df['Day'] = df['Date_Column'].dt.day
+		df['Month'] = df['Date_Column'].dt.month
+		df['Year'] = df['Date_Column'].dt.year
+
+Q.13 How can you extract hours, minutes, seconds in a datetime column?
+ANS==>
+	Similar to above, use the hour, minute, and second attributes.
+	Example:
+		df['Hour'] = df['Datetime_Column'].dt.hour
+		df['Minute'] = df['Datetime_Column'].dt.minute
+		df['Second'] = df['Datetime_Column'].dt.second
+
+Q.14 How do you read an Excel file, CSV file, and JSON file in Jupyter Notebook using Pandas?
+ANS==>
+	Excel: pd.read_excel('file.xlsx')
+	CSV: pd.read_csv('file.csv')
+	JSON: pd.read_json('file.json')
+
+Q.15 How can you create an Excel file from a DataFrame using Pandas?
+ANS==>
+	Use the to_excel() method.
+	Example:
+		df.to_excel('output.xlsx', index=False)
+
+
+*******************************************************************************THE-END*******************************************************************************
+
+
