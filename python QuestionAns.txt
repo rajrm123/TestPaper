@@ -1,0 +1,89 @@
+Q1. Converting an Integer into Decimals:
+ANS:
+    number = 123
+    decimal_number = float(number)
+    print(decimal_number)
+
+Q2. Converting a String of Integers into Decimals:
+ANS:
+	string_integers = "456"
+	decimal_number = float(string_integers)
+	print(decimal_number)
+
+Q3. Reversing a string using an Extended Slicing Technique:
+ANS:
+	string = "hello"
+	reversed_string = string[::-1]
+	print(reversed_string)
+
+
+Q4. Counting the number of occurrences of a character in a string:
+ANS:
+	string = "hello"
+	char = 'l'
+	count = string.count(char)
+	print(count)
+
+Q5. Finding the maximum and minimum number in a list:
+
+ANS:
+	numbers = [5, 2, 9, 1, 7]
+	maximum = max(numbers)
+	minimum = min(numbers)
+	print("Maximum:", maximum)
+	print("Minimum:", minimum)
+
+Q6. Finding the middle element in a list:
+ANS:
+	numbers = [1, 2, 3, 4, 5]
+	middle_index = len(numbers) // 2
+	middle_element = numbers[middle_index]
+	print("Middle Element:", middle_element)
+
+Q7. Converting a list into a string:
+ANS:
+	my_list = ['hello', 'world']
+	string = ' '.join(my_list)
+	print(string)
+
+Q8. Adding two list elements together:
+ANS:
+	list1 = [1, 2, 3]
+	list2 = [4, 5, 6]
+	sum_list = [x + y for x, y in zip(list1, list2)]
+	print(sum_list)
+
+Q9. Checking if a given number is even or odd:
+ANS:
+	number = 7
+	if number % 2 == 0:
+    	   print("Even")
+	else:
+    	    print("Odd")
+
+Q10. Checking if a given character is a vowel or consonant:
+ANS:
+
+   char = 'a'
+   if char.lower() in 'aeiou':
+      print("Vowel")
+   else:
+      print("Consonant")
+
+Q11. Counting vowels and consonants in a string:
+ANS:
+	string = "hello world"
+	vowels = 0
+	consonants = 0
+	for char in string:
+    	if char.lower() in 'aeiou':
+        vowels += 1
+    	elif char.isalpha():
+        consonants += 1
+	print("Vowels:", vowels)
+	print("Consonants:", consonants)
+Q12. Removing spaces from a string without using inbuilt function:
+ANS:
+	string = "hello world"
+	string_without_spaces = ''.join(char for char in string if char != ' ')
+	print(string_without_spaces)

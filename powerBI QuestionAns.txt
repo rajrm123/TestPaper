@@ -1,0 +1,54 @@
+Q1.What is Power BI? And why is it used for?
+ANS:Power BI is a business analytics tool developed by Microsoft. It is used for data visualization, interactive dashboards, and business intelligence (BI) capabilities. It allows users to connect to various data sources, visualize data, and share insights across an organization.
+
+Q2.What are the main differences between self-service BI and Managed Enterprise BI?
+ANS: Self-service BI typically involves users creating their own reports and visualizations without heavy involvement from IT. Managed Enterprise BI, on the other hand, involves centralized control over data governance, security, and report distribution by IT professionals.
+
+Q3.How does Power BI work?
+ANS: Power BI works by connecting to various data sources, importing or streaming data, transforming and modeling data using Power Query and Power Pivot, creating visualizations using Power BI Desktop, and sharing reports and dashboards on the Power BI service.
+
+Q4.In what formats does Power BI available?
+ANS: Power BI is available as Power BI Desktop (for report authoring), Power BI Service (for sharing and collaboration), and Power BI Mobile (for accessing reports on mobile devices).
+
+Q5.Describe the building blocks of Power BI?
+ANS: The building blocks of Power BI include data sources, data transformation (Power Query), data modeling (Power Pivot), visualization (reports, dashboards), and sharing/collaboration features.
+
+Q6. What are the major components of Power BI? And what do they do?
+ANS: The major components of Power BI include:
+
+Power BI Desktop: Used for report authoring and data modeling.
+Power BI Service: Used for sharing and collaboration.
+Power BI Mobile: Used for accessing reports on mobile devices.
+Power Query: Used for data transformation.
+Power Pivot: Used for data modeling.
+Power View: Used for interactive data visualizations.
+Power Map: Used for 3D geographic data visualizations.
+Power Apps: Used for building custom applications.
+Q7:Name some of the popular types of filters available in Power BI?
+ANS:
+   Popular types of filters in Power BI include slicers, visual-level filters, page-level filters, report-level filters, and drill-through filters.
+
+Q8. What is the use of the “Get Data” icon in Power BI?
+ANS:The "Get Data" icon in Power BI is used to connect to various data sources such as databases, files, online services, and other sources to import data into Power BI for analysis and visualization.
+
+Q9:How to create and manage relationships in Power BI Desktop?
+ANS: Relationships in Power BI Desktop can be created and managed in the "Model" view by defining relationships between tables based on common fields. You can create relationships by dragging fields between tables or by using the Manage Relationships dialog.
+
+Q10. Differentiate Power BI vs Excel?
+ANS: Power BI is primarily used for business intelligence and data visualization, whereas Excel is a spreadsheet tool with BI capabilities. Power BI is more focused on interactive and dynamic visualizations, whereas Excel is often used for static reports and calculations.
+
+Q11.Are Power View and Power Query the same?
+ANS:No, Power View and Power Query are not the same. Power Query is used for data transformation and importing data, while Power View is used for creating interactive data visualizations.
+
+Q12.Can you tell me what the difference between Power BI personal Gateway and Data Management Gateway is?
+ANS:Power BI Personal Gateway is used for connecting Power BI to on-premises data sources for individual users, while Data Management Gateway is used for connecting multiple cloud services to on-premises data sources for enterprise-wide data access and management.
+
+Q13.List the benefits of using variables in DAX.
+ANS:Benefits of using variables in DAX include improved readability of formulas, enhanced performance, and easier maintenance of complex calculations by defining intermediate results.
+
+Q14.What is the Power Map?
+ANS:Power Map is a 3D data visualization tool in Power BI that allows users to explore and visualize geographic and temporal data on a 3D map. It provides a visually compelling way to analyze and present data.
+
+
+
+
