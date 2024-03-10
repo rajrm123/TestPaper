@@ -1,0 +1,127 @@
+Q.1 What are SQL dialects? Give some examples?
+ANS:SQL dialects are variations of the SQL language that include different features, syntax, or functions specific to certain database management systems (DBMS).     Examples of SQL dialects include:
+    T-SQL (Transact-SQL) used by Microsoft SQL Server
+    MySQL SQL dialect used by MySQL
+    PostgreSQL SQL dialect used by PostgreSQL
+
+Q.2 What are the main applications of SQL?
+ANS:The main applications of SQL include:
+    Database creation and management
+    Data insertion, updating, and deletion
+    Data querying for information retrieval
+    Data manipulation and transformation
+
+Q.3 What is an SQL statement? Give some examples?
+ANS:An SQL statement is a text-based command used to perform operations on a database, such as retrieving data, inserting records, updating data, or deleting records.     Examples include:
+    SELECT *FROM Data_table; 
+    INSERT INTO Data_table (column1, column2) 
+    VALUES (value1, value2);
+    UPDATE Data_table SET column1 = value1 
+    WHERE condition; 
+    DELETE FROM Data_table 
+    WHERE condition; 
+
+Q.4 What types of SQL commands (or SQL subsets) do you know? Give some examples of common SQL commands of each type?
+ANS:SQL commands are categorized into:
+   Data Definition Language: Commands like CREATE, DROP, ALTER used to define and modify database schema.
+   Data Manipulation Language: Commands like SELECT, INSERT, UPDATE, DELETE used for data manipulation.
+   Data Control Language: Commands like GRANT, REVOKE used for access control.
+   Transaction Control Language: Commands like COMMIT, ROLLBACK used for transaction management.
+
+Q.5 What is a database? What is DBMS, and what types of DBMS do you know?
+ANS:A database is an organized collection of data, which is used to stored and accessed electronically from a computer system. 
+    A Database Management System (DBMS) is software that provides an interface for users to interact with databases. Types of DBMS include:
+    Relational DBMS (RDBMS) like Oracle, MySQL, SQL Server
+    NoSQL DBMS like MongoDB
+
+Q.6 What are tables and fields in SQL?
+ANS:Table is a collection of related data entries and it consists of columns and rows. 
+    Fields in a table represent the categories of data stored in the table, like name, age, address, sales, categories etc;
+
+Q.7 What is an SQL query, and what types of queries do you know?
+ANS:Types of queries include:
+    Select queries for data retrieval
+    Action queries: INSERT, UPDATE, DELETE for data manipulation
+    Data definition queries: CREATE TABLE, ALTER TABLE for schema changes
+
+Q.8 What is a subquery? What types of SQL subqueries do you know?
+ANS:A subquery is an SQL query nested inside another query. Types of subqueries include:
+    Scalar subqueries (return a single value)
+    Row subqueries (return a row of data)
+    Column subqueries (return a column of data)
+    Table subqueries (return a table)
+
+Q.9 What is a constraint, and why use constraints? What SQL constraints do you know?
+ANS:Constraints in SQL are rules applied to columns of a table to enforce data integrity. Common SQL constraints include:
+    PRIMARY KEY
+    FOREIGN KEY
+    UNIQUE
+    NOT NULL
+    CHECK
+
+Q.10 What is a join? What types of joins do you know?
+ANS:A join is an SQL operation used to combine rows from two or more tables based on a related column between them. Types of joins include:
+    Inner Join
+    Left Join
+    Right Join
+    Full Join
+    Cross Join
+
+Q.11 What is a primary key? What is a foreign key? What is a unique key?
+ANS:Primary Key: A column used to uniquely identify each row in a table.
+    Foreign Key: A column in one table that uniquely identifies a row of another table or the same table.
+    Unique Key: A constraint that ensures all values in a column or group of columns are unique.
+
+
+Q.12 What is an index? What types of indexes do you know?
+ANS:An index is a database object that improves the speed of data retrieval. Types of indexes include:
+    Primary index
+    Secondary index
+    Unique index
+    Full-text index
+
+Q.13 What is a schema? What is a SQL comment?
+ANS:Schema: The structure that defines the organization of data in a database, including tables, columns, relationships, and constraints.
+    SQL Comment: A note or explanation in the SQL code, written as -- for single-line comments or /* */ for multi-line comments.
+
+Q.14 What is a SQL operator? What types of SQL operators do you know?
+ANS:SQL operators are symbols or keywords used to perform operations on data. Types of SQL operators include:
+    Arithmetic operators 
+    Comparison operators 
+    Logical operators 
+
+Q.15 What is an alias? What is a clause?
+ANS:Alias: A temporary name given to a table or column in an SQL query.
+    Clause: A part of an SQL statement that performs a specific function, like WHERE, FROM, ORDER BY.
+
+Q.16 What are some common statements used with the SELECT query?
+ANS:Common statements used with SELECT include:
+    WHERE for filtering records
+    ORDER BY for sorting results
+    GROUP BY for grouping rows
+
+
+Q.17 How to create a table? How to update a table? How to delete a table from a database?
+ANS:  Create: CREATE TABLE table_nameSQL;
+    Update: UPDATE table_name SET column1 = value1 
+    WHERE condition;
+    Delete: DROP TABLE table_name;
+
+Q.18 How to select common records from two tables?
+ANS:To select common records, use the INNER JOIN:
+    SQL QUERY:
+    SELECT columns 
+    FROM table1 
+    INNER JOIN table2 ON table1.common_column = table2.common_column; 
+
+Q.19 What are entities? What are relationships? What is NULL value?
+ANS:Entities: Objects in a database, represented as tables.
+    Relationships: Associations between entities, represented as foreign keys.
+    NULL value: A marker in a database indicating that a data value does not exist, different from zero or blank space.
+
+Q.20 What is a function in SQL, and why use functions?
+ANS:Functions in SQL are predefined commands that perform operations on data, used to enhance the capabilities of SQL queries. Types include:
+    Aggregate functions: SUM(), COUNT(), AVG()
+    Scalar functions: UCASE(), LCASE(), ROUND()
+    Case manipulation functions: UPPER(), LOWER()
+    Character manipulation functions: CONCAT()
