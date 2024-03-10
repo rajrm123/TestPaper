@@ -1,0 +1,47 @@
+Q1.Why Tableau? How does Tableau compare to other BI tools?
+ANS: Tableau is preferred for its intuitive interface, powerful visualization capabilities, ease of use, and ability to      handle large datasets. Compared to other BI tools, Tableau often stands out for its speed of implementation,      flexibility, and robust community support.
+
+Q2.What data sources can you connect to? How do you connect to them?
+ANS: Tableau can connect to a wide range of data sources including relational databases, cloud databases, spreadsheets, web      data connectors, and more. To connect, you typically use Tableau's data connection interface where you select the data      source type and provide connection details.
+
+Q3.What are the join types in Tableau?
+ANS: Tableau supports four types of joins: Inner Join, Left Join (Outer), Right Join (Outer), and Full Outer Join.
+
+Q4.How to join data in Tableau?
+ANS: You can join data in Tableau by dragging fields from different data sources onto each other in the data pane and      configuring the join type and conditions in the join dialog box.
+
+Q5. What is the difference between joining and blending?
+ANS: Joining combines data from different tables within the same data source, while blending combines data from different      data sources.
+
+Q6.What is the difference between a live and an extract?
+ANS: In Tableau, a live connection connects directly to the data source, while an extract creates an extract of the data      which is stored locally within the Tableau workbook.
+
+Q7.What is a dimension vs. a measure?
+ANS: A dimension is a categorical field used for grouping and filtering data, while a measure is a quantitative field that 	     can be aggregated.
+
+Q8. What is a discrete vs. a continuous value?
+ANS: Discrete values are distinct and separate, often used for categorical data, while continuous values are measured along      a continuous scale and can take on any value within a range.
+
+Q9.What is the Order of Operations?
+ANS:The Order of Operations in Tableau defines the sequence in which Tableau performs calculations and applies filters to     generate the final visualization.
+
+Q10.What are parameters, sets, and groups?
+ANS:Parameters are dynamic values that can be used to modify calculations, filters, and reference lines. Sets are custom     fields used for grouping data based on specific conditions. Groups are collections of dimension members that are     grouped together for analysis.
+
+Q11.What is a calculated field?
+ANS:A calculated field is a new field created by applying a calculation to existing fields in the dataset.
+
+Q12.What is a dual axis?
+ANS:A dual axis allows you to plot two different measures on the same axis to compare them visually.
+
+Q13.What are LOD expressions?
+ANS:Level of Detail (LOD) expressions in Tableau allow you to compute aggregations at different levels of granularity     independently of the visualization level.
+
+Q14.What are actions?
+ANS:Actions in Tableau are interactions between different sheets or dashboards, such as filter actions, highlight actions,      and URL actions.
+
+Q15.How do you restrict access to the data?
+ANS:Access to data can be restricted in Tableau by configuring permissions at the data source level, workbook level, or         by applying row-level security using user filters.
+
+Q16.How do you increase the performance of a slow workbook?
+ANS:To increase the performance of a slow workbook, you can optimize data connections, minimize the use of complex     calculations, reduce the number of visualizations on a dashboard, and optimize data extracts for faster querying.     Additionally, using incremental extracts and utilizing Tableau Server's performance tuning features can also help     improve performance.
